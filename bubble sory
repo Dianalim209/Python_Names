@@ -1,0 +1,19 @@
+function bubbleSort(arr){ 
+  var temp = arr[0];
+  var swapCount;
+  
+  while(swapCount !== 0){
+        swapCount = 0;
+  
+for(var i=0; i<arr.length; i++){
+  temp = arr[i];
+if (arr[i] > arr[i+1]) {
+arr[i] = arr[i+1];
+arr[i+1] = temp ;
+swapCount ++;
+}
+}
+console.log(arr);
+}
+}
+bubbleSort([7,-5,10,9,2,12]);
